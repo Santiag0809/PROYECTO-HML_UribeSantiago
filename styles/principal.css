@@ -1,0 +1,26 @@
+body {
+    background-image: url(../src/fondoPrin.png);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.img {
+    text-align: center;
+    align-content: center;
+    margin-top: 40vh;
+    opacity: 0;
+    animation: desaparecer 3s 1;
+}
+
+
+@keyframes desaparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

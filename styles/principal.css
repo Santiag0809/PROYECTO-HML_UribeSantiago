@@ -1,17 +1,84 @@
+@font-face {
+    font-family: "sara";
+    src: url(../storage/MYRIADPRO-REGULAR.OTF);
+}
+
+@font-face {
+    font-family: "sarita";
+    src: url(../storage/MyriadPro-Light.otf);
+}
+
 body {
     background-image: url(../src/fondoPrin.png);
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
-.img {
+.imagen {
     text-align: center;
     align-content: center;
     margin-top: 40vh;
     opacity: 0;
-    animation: desaparecer 3s 1;
+    animation: desaparecer 2s 1;
+    position: relative;
+}
+
+.login {
+    font-family: "sara";
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    width: 20vw;
+    margin-left: 40vw;
+    margin-right: auto;
+    margin-top: -20vh;
+    animation: login 6s 1;
+    opacity: 1;
+}
+
+.titulito {
+    font-size: xx-large;
+    font-weight: 300;
+}
+
+.login input {
+    width: auto;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.link {
+    padding: auto;
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    width: 8vw;
+    height: 4vh;
+    margin: auto;
+    font-size: 1.56rem;
+
+}
+
+.hola {
+    text-align: start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5vw;
 }
 
 
@@ -20,7 +87,26 @@ body {
         opacity: 0;
     }
 
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes login {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
     100% {
         opacity: 1;
     }
+
 }

@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "sara";
+    font-family: "negro";
     src: url(../storage/MYRIADPRO-REGULAR.OTF);
 }
 
 @font-face {
-    font-family: "sarita";
+    font-family: "negrito";
     src: url(../storage/MyriadPro-Light.otf);
 }
 
 body {
-    font-family: "sarita", sans-serif;
+    font-family: "negrito", sans-serif;
     background-image: url(../src/fondoPrin.png);
     background-color: black;
     background-size: cover;
@@ -30,7 +30,7 @@ body {
 }
 
 .login {
-    font-family: "sara";
+    font-family: "negro";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,21 +50,21 @@ body {
 }
 
 .titulito {
-    font-family: "sara", sans-serif;
+    font-family: "negro", sans-serif;
     font-size: 1.8rem;
     font-weight: normal;
     margin-bottom: 0.5rem;
 }
 
 .subtitulito {
-    font-family: "sarita", sans-serif;
+    font-family: "negrito", sans-serif;
     font-size: 0.95rem;
     font-weight: light;
     margin-bottom: 2rem;
 }
 
 .subtitulito2 {
-    font-family: "sarita", sans-serif;
+    font-family: "negrito", sans-serif;
     font-size: 0.95rem;
     font-weight: lighter;
     margin-bottom: 2rem;

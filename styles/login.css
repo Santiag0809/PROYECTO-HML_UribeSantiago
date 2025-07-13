@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "sara";
+    src: url(../storage/MYRIADPRO-REGULAR.OTF);
+}
+
+@font-face {
+    font-family: "sarita";
+    src: url(../storage/MyriadPro-Light.otf);
+}
+
+body {
+    font-family: "sarita", sans-serif;
+    background-image: url(../src/fondoPrin.png);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.imagen {
+    text-align: center;
+    align-content: center;
+    margin-top: 40vh;
+    opacity: 0;
+    animation: desaparecer 2s 1;
+    position: relative;
+}
+
+.perfil {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 60px;
+    width: 90%;
+    max-width: 700px;
+    padding: 3rem 4rem;
+    text-align: center;
+    opacity: 0;
+    animation: login 6s 1;
+}
+
+.perfil h1 {
+    font-family: "sara", sans-serif;
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.perfil p {
+    font-family: "sarita", sans-serif;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 5px
+}
+
+.Pedro {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem 0;
+}
+
+
+
+@keyframes desaparecer {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes login {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

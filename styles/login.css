@@ -8,31 +8,40 @@
     src: url(../storage/MyriadPro-Light.otf);
 }
 
-body {
+* {
+    box-sizing: border-box;
+}
+
+.inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    overflow: hidden;
     font-family: "negrito", sans-serif;
     background-image: url(../src/fondoPrin.png);
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: ocultarse 1s forwards;
+    animation-delay: 8s;
 }
-
 
 .imagen {
     text-align: center;
     margin-top: 40vh;
     opacity: 0;
-    animation: desaparecer 2s 1;
     position: relative;
+    animation: desaparecer 2s 1, desaparecer 2s 1;
+    animation-delay: 0s, 6s;
 }
-
 
 .perfil {
     font-family: "negro";
@@ -49,7 +58,6 @@ body {
     text-align: center;
     opacity: 0;
     animation: login 5s 1;
-
 }
 
 .perfil h1 {
@@ -74,8 +82,156 @@ body {
     margin: 1rem 0;
 }
 
+header {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.todo {
+    font-family: "negro", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background: center center;
+    overflow: hidden;
+}
+
+.añadir,
+.szs,
+.delete,
+.kario,
+.reportar,
+.ayuda {
+    display: flex;
+    width: fit-content;
+    height: 1.5rem;
+    align-items: center;
+}
+
+.reportar,
+.ayuda {
+    margin-top: 0.2rem;
+    height: 1.6rem;
+}
+
+.ajustes {
+    margin: 2px;
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: fit-content;
+}
+
+.paisanada {
+    width: fit-content;
+    height: 1rem;
+}
+
+.pedrito {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+hr {
+    margin: 1.5rem 0;
+    margin-top: 0.1rem;
+    width: 100vw;
+}
+
+.indicadores {
+    height: 2.7rem;
+    width: 90%;
+    border: 1px solid black;
+    position: relative;
+    border-radius: 5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0.5rem auto;
+}
+
+.indicadores p {
+    display: inline;
+    margin-right: 2rem;
+    margin-top: 0.7rem;
+}
+
+.titulo {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -1.5rem;
+}
+
+.subtitulo {
+    margin-top: 0;
+}
+
+.indicalo {
+    width: 100%;
+}
+
+.indicalo p {
+    display: inline;
+    margin-right: 3.5rem;
+}
+
+.paisano {
+    display: inline;
+    margin-top: 0.78rem;
+}
+
+.paisano p {
+    display: inline;
+    margin-right: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.añade {
+    height: 2.7rem;
+    width: 20%;
+    background-color: rgb(255, 111, 44);
+    border: 1px solid black;
+    position: relative;
+    border-radius: 5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0.5rem auto;
+    text-align: center;
+}
+
+.añade p {
+    color: white;
+    margin-top: 0.7rem;
+}
 
 @keyframes desaparecer {
     0% {
@@ -104,5 +260,15 @@ body {
 
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes ocultarse {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: -1;
+        position: absolute;
     }
 }

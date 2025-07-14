@@ -41,6 +41,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
+    color: black;
     border-radius: 60px;
     width: 90%;
     max-width: 700px;
@@ -55,12 +56,14 @@ body {
     font-family: "negro", sans-serif;
     font-size: 1.8rem;
     margin: 1rem 0 0.5rem;
+    color: black;
 }
 
 .perfil p {
     font-family: "negrito", sans-serif;
     font-size: 1rem;
     margin-top: 0.5rem;
+    color: black;
 }
 
 .pedroFoto {
@@ -71,16 +74,7 @@ body {
     margin: 1rem 0;
 }
 
-header {
-    background-color: white;
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    text-align: top;
-    justify-content: space-between;
-    align-content: center;
-}
+
 
 
 @keyframes desaparecer {

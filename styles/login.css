@@ -83,13 +83,45 @@
 }
 
 header {
-    margin-top: 0.5rem;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.itemHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "negro", sans-serif;
+    cursor: pointer;
+}
+
+.itemHeader img {
+    height: 20px;
+}
+
+.karioLogo {
+    height: 30px;
+}
+
+.ajustes {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.pedrito {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.paisanada {
+    height: 18px;
 }
 
 .contenedor {
@@ -118,42 +150,6 @@ header {
     overflow: hidden;
 }
 
-.añadir,
-.szs,
-.delete,
-.kario,
-.reportar,
-.ayuda {
-    display: flex;
-    width: fit-content;
-    height: 1.5rem;
-    align-items: center;
-}
-
-.reportar,
-.ayuda {
-    margin-top: 0.2rem;
-    height: 1.6rem;
-}
-
-.ajustes {
-    margin: 2px;
-    gap: 0.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: fit-content;
-}
-
-.paisanada {
-    width: fit-content;
-    height: 1rem;
-}
-
-.pedrito {
-    width: 2.8rem;
-    height: 2.8rem;
-}
 
 hr {
     margin: 1.5rem 0;

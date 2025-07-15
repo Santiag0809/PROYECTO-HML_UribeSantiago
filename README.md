@@ -37,3 +37,6 @@ Desarrollado por **Santiago Uribe Duarte**
 
 ## 💥Enlace al trabajo
 https://santiag0809.github.io/PROYECTO-HML_UribeSantiago_GarciaYamith/kario.html
+
+## Figma 
+https://www.figma.com/design/JT9Ln1aQqJ5eDsiKH0MO7j/maquetacion?t=QKZDVjxxQXUdZAIA-0

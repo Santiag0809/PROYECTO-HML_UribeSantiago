@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "negrito";
+}
+
 .inicio {
     position: fixed;
     top: 0;
@@ -124,109 +128,88 @@ header {
     height: 18px;
 }
 
+.todo,
 .contenedor {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 93vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-
-.todo {
-    font-family: "negro", sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    background: center center;
-    overflow: hidden;
 }
 
 
-hr {
-    margin: 1.5rem 0;
-    margin-top: 0.1rem;
-    width: 100vw;
-}
-
-.indicadores {
-    height: 2.7rem;
-    width: 90%;
-    border: 1px solid black;
-    position: relative;
-    border-radius: 5rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 0.5rem auto;
-}
-
-.indicadores p {
-    display: inline;
-    margin-right: 2rem;
-    margin-top: 0.7rem;
-}
 
 .titulo {
-    margin: 0;
-    display: flex;
-    justify-content: center;
     text-align: center;
-    margin-top: -1.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
 }
 
 .subtitulo {
-    margin-top: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #555;
 }
 
-.indicalo {
+
+.fila,
+.encabezado {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 1rem;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    max-width: 90%;
     width: 100%;
+    text-align: center;
+    font-family: "negro", sans-serif;
 }
 
-.indicalo p {
-    display: inline;
-    margin-right: 3.5rem;
+.fila {
+    border: 1px solid #999;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
 }
 
-.paisano {
-    display: inline;
-    margin-top: 0.78rem;
+.encabezado {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 0;
 }
 
-.paisano p {
-    display: inline;
-    margin-right: 3.5rem;
+.encabezado p {
+    font-family: "negro", sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
-.añade {
-    height: 2.7rem;
-    width: 20%;
-    background-color: rgb(255, 111, 44);
-    border: 1px solid black;
-    position: relative;
-    border-radius: 5rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 0.5rem auto;
+.fila p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-align: center;
 }
 
-.añade p {
+
+.añade {
+    width: 20%;
+    background-color: #ff6f2c;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    margin: 1rem auto;
     color: white;
-    margin-top: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.añade:hover {
+    background-color: #e85c1a;
+}
+
+.añade a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 @keyframes desaparecer {
